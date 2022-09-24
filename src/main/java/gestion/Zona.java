@@ -4,18 +4,16 @@ import java.util.ArrayList;
 public class Zona{
     private String nombre;
     private Zoologico zoo[];
-    private ArrayList<Animal> animales;
+    private ArrayList<Animal> animales= new ArrayList<>();
 
     public Zona(String nombre, Zoologico zoos){
         this.nombre=nombre;
         zoo=new Zoologico[1];
         zoo[0]=zoos;
-
     }
     public Zona(){
 
     }
-
     public void agregarAnimales(Animal animal){
         animales.add(animal);
     }
